@@ -14,8 +14,6 @@ table <- read.table("data.csv",
 table$technology <- paste(toupper(substring(table$technology, 1,1)),
                           substring(table$technology, 2), sep = "")
 
-data <- data.frame(color, technology, russian_level, russian_importance, priority_area, thematic_area)
-
 ggplot(data, # data frame
        aes(x = russian_level,
            y = russian_importance,
