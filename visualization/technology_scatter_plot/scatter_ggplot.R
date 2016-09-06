@@ -4,7 +4,12 @@ install.packages("ggrepel")
 library(ggplot2)
 library(ggrepel)
 
-table <- read.table("data.csv", header= TRUE, sep = '\t', quote= "\"", encoding="UTF-8",  stringsAsFactors=FALSE)
+table <- read.table("data.csv",
+                    header= TRUE,
+                    sep = '\t',
+                    quote= "\"",
+                    encoding ="UTF-8",
+                    stringsAsFactors =FALSE)
 
 color <- unique(color, incomparables = FALSE)
 
