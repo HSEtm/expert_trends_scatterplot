@@ -11,8 +11,8 @@ table <- read.table("data.csv",
                     encoding ="UTF-8",
                     stringsAsFactors =FALSE)
 
-
-technology <- paste(toupper(substring(technology, 1,1)),substring(technology, 2), sep = "")
+table$technology <- paste(toupper(substring(table$technology, 1,1)),
+                          substring(table$technology, 2), sep = "")
 
 data <- data.frame(color, technology, russian_level, russian_importance, priority_area, thematic_area)
 
