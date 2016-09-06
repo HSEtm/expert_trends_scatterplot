@@ -11,7 +11,6 @@ table <- read.table("data.csv",
                     encoding ="UTF-8",
                     stringsAsFactors =FALSE)
 
-color <- unique(color, incomparables = FALSE)
 
 technology <- paste(toupper(substring(technology, 1,1)),substring(technology, 2), sep = "")
 
